@@ -22,21 +22,22 @@ if word == word[::-1]:
     print('lizcba jest palindromro')
 else:
     print('liczba nie jest palindromem')
+
 #liczba pierwsza
 
 number2 = int(input('podaj liczbe '))
 
 dz = 2
-t = 0
+t = -1
 
 pierwiastek = int(round(number2**0.5)+1)
 
 while dz<pierwiastek:
     if number2%dz==0:
-        print('nie jest liczba pierwsza a jej dzielnik to '+dz)
         t = 1
+        print('nie jest liczba pierwsza a jej dzielnik to '+str(dz))
         break
     dz = dz+1
-if t==0:
+if t<0:
     print('jest liczba pierwsza')
         
